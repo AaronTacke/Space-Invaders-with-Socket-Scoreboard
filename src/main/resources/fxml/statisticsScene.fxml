@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="sessionID" text="Session ID:">
+         <font>
+            <Font name="Verdana" size="19.0" />
+         </font>
+      </Label>
+      <Label text="Recent activity of the students:">
+         <font>
+            <Font name="Avenir Roman" size="14.0" />
+         </font>
+      </Label>
+      <BarChart fx:id="chart" animated="false" legendVisible="false" prefHeight="599.0" prefWidth="600.0">
+          <xAxis>
+              <CategoryAxis label="Time" side="BOTTOM" tickLabelRotation="90" />
+          </xAxis>
+          <yAxis>
+              <NumberAxis autoRanging="false" label="Percent" side="RIGHT" tickUnit="10" />
+          </yAxis>
+      </BarChart>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <padding>
+      <Insets top="30.0" />
+   </padding>
+</VBox>
